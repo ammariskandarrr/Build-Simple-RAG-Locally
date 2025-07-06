@@ -1,20 +1,20 @@
-## Project Description (for GitHub)
+## Introduction
+In this project, we will build a simple Retrieval-Augmented Generation (RAG) system locally using a large language model (LLM). We'll leverage Hugging Face's Pipeline within Langchain and integrate it with a Hugging Face Embedding model.
 
-**LLM with Document Retrieval System**
+### The core components of this tutorial include:
+ 
+**Vector Storage:**
+We will use ChromaDB from Langchain to store vectors. ChromaDB is an efficient vector database that allows us to perform fast similarity searches.
 
-This project combines the power of large language models with document retrieval to create a context-aware question answering system. It uses:
+**Similarity Search**: 
+Using Langchain to retrieve the most relevant information by performing a similarity search on the vector database.
 
-1. **ChromaDB** for storing and retrieving document embeddings
-2. **Run Locally**  for text generation directly using HuggingFace
-3. **Gradio** for an intuitive web interface prototype
+**Information Retrieval:**
+We'll retrieve the Top 2 most relevant pieces of information based on the user's query and our pre-stored vectors in the database.
+Next Steps & Enhancements
 
-Key capabilities:
-- Finds relevant documents for user queries
-- Generates responses based on retrieved context
-- Tracks and displays source information
-- Runs efficiently on consumer hardware through quantization
+This system is just the starting point to build the RAG. You can further enhance it by:
 
-Ideal for:
-- Building knowledge-based assistants
-- Creating document Q&A systems
-- Experimenting with retrieval-augmented generation
+Refining the Prompt Templates: Implementing more precise prompt templates to guide the model's response.
+Tuning Model Parameters: Experimenting with model parameters like temperature to control the randomness of responses.
+Changing Models: Swapping out different embedding models and LLM models to explore how they impact performance.
